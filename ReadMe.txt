@@ -1,0 +1,7 @@
+﻿Lowers Will by 20, Aim 50 and Crit Chance 20 (ini configurable) of any unit (including X-COM!) interruptted by any reaction ability until the end of its turn. This mod tries to make defensive gameplay more viable and reduce the need to kill all enemies on your turn especially when they are too far to flank you. Although this mainly affect Overwatch, abilities like BladeStorm will be affected along with any custom abilities that are reactions.
+
+v1.0
+Initial version
+-20 Will, -50 Aim, -20 Crit
+
+tags= gameplay
