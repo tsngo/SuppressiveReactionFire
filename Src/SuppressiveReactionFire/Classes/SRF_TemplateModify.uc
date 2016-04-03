@@ -27,11 +27,11 @@ static function array<X2DataTemplate> CreateTemplates()
 			}
 			StandardAim = X2AbilityToHitCalc_StandardAim(AbilityTemplate.AbilityToHitCalc);
 			if (StandardAim != none && StandardAim.bReactionFire) {
-				`log("S: " $ AbilityTemplate.DataName);
+				//`log("S: " $ AbilityTemplate.DataName);
 				AddSRFEffects(AbilityTemplate);
 			}
 			else if (hasReserve) {
-				`log("R: " $ AbilityTemplate.DataName);
+				//`log("R: " $ AbilityTemplate.DataName);
 				AddSRFEffects(AbilityTemplate);
 			}
 		}

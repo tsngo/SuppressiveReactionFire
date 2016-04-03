@@ -5,9 +5,9 @@ simulated protected function OnEffectAdded(const out EffectAppliedData ApplyEffe
 	local XComGameState_Unit UnitState;
 	super.OnEffectAdded(ApplyEffectParameters, kNewTargetState, NewGameState, NewEffectState);
 	UnitState = XComGameState_Unit(kNewTargetState);
-	`log("Added: " $ UnitState.GetFullName());
+	/*`log("Added: " $ UnitState.GetFullName());
 	`log("AIM: " $ UnitState.GetCurrentStat(eStat_Offense));
-	`log("WILL: " $ UnitState.GetCurrentStat(eStat_Will));
+	`log("WILL: " $ UnitState.GetCurrentStat(eStat_Will));*/
 }
 
 simulated function OnEffectRemoved(const out EffectAppliedData ApplyEffectParameters, XComGameState NewGameState, bool bCleansed, XComGameState_Effect RemovedEffectState)
@@ -19,8 +19,7 @@ simulated function OnEffectRemoved(const out EffectAppliedData ApplyEffectParame
 	{
 		TargetUnit = XComGameState_Unit(`XCOMHISTORY.GetGameStateForObjectID(ApplyEffectParameters.TargetStateObjectRef.ObjectID));
 		`assert(TargetUnit != none);
-		`log("Removed: " $ TargetUnit.GetFullName());
-
+		//`log("Removed: " $ TargetUnit.GetFullName());
 	}
 	super.OnEffectRemoved(ApplyEffectParameters, NewGameState, bCleansed, RemovedEffectState);
 }
