@@ -2,8 +2,7 @@ class SRF_X2Effect_RemoveActionPoints extends X2Effect_PersistentStatChange;
 
 simulated protected function OnEffectAdded(const out EffectAppliedData ApplyEffectParameters, XComGameState_BaseObject kNewTargetState, XComGameState NewGameState, XComGameState_Effect NewEffectState)
 {
-	local XComGameState_Unit SourceUnit, TargetUnit;
-	local XComGameStateContext_Ability AbilityContext;
+	local XComGameState_Unit TargetUnit;
 
 	super.OnEffectAdded(ApplyEffectParameters, kNewTargetState, NewGameState, NewEffectState);
 

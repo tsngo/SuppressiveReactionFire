@@ -56,6 +56,8 @@ static function AddSRFEffects(X2AbilityTemplate Template)
 	willPenalty = srfConfig.getWillPenalty();
 	aimPenalty = srfConfig.getAimPenalty();
 	critPenalty = srfConfig.getCritPenalty();
+	mobilityPenalty = srfConfig.getMobilityPenalty();
+	defensePenalty = srfConfig.getDefensePenalty();
 
 	SuppressedEffect = new class'SRF_X2Effect_SRF';
 	SuppressedEffect.BuildPersistentEffect(1, false, false, true, eGameRule_PlayerTurnEnd);
